@@ -4,7 +4,8 @@
   box-sizing: border-box;
   font-family: "Quicksand";
   text-decoration: none;
-  color: black;
+  color: #3f3f3f;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -22,8 +23,29 @@ header .container {
   align-items: center;
 }
 
-.logo img {
-  width: 120px;
+.logo a {
+  font-size: 28px;
+  letter-spacing: -1px;
+  font-weight: 100;
+}
+
+.logo span {
+  width: 20px;
+  height: 20px;
+  background-color: #3f3f3f;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+.profile .foto {
+  border-radius: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.profile img {
+  width: 250px;
+  border-radius: 100%;
 }
 
 nav ul {
@@ -31,10 +53,14 @@ nav ul {
   list-style-type: none;
 }
 
+nav .hamburger {
+  cursor: pointer;
+}
+
 nav .hamburger span {
   width: 30px;
   height: 2px;
-  background-color: black;
+  background-color: #3f3f3f;
   display: block;
   margin: 7px;
   display: none;
@@ -46,10 +72,14 @@ nav ul li a {
 }
 
 main .container {
+  padding: 80px 0;
+}
+
+main .container .profile {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 50px 0 100px 0;
 }
 
 .profile h3 {
@@ -65,6 +95,20 @@ main .container {
 .profile h1 {
   font-weight: 600;
   text-align: center;
+}
+
+#hobbies {
+  background-color: rgb(247, 247, 247);
+  padding: 100px 0;
+}
+
+#hobbies .container {
+  text-align: center;
+}
+
+#hobbies .container h1 {
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .card-list {
@@ -121,7 +165,6 @@ button {
 
 footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 350px;
   height: 60px;
   display: flex;
   justify-content: center;
