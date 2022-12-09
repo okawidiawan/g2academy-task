@@ -107,13 +107,16 @@ main .container {
   justify-content: flex-end;
 }
 
-.tombol a {
-  margin: 0 10px;
+button {
+  margin: 0 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.tombol a i {
+.tombol button i {
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.1);
 }
 
 footer {
